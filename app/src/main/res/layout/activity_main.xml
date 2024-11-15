@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,15 +10,16 @@
     tools:context="com.ubl.a2312500602_rafif_utsb.MainActivity">
 
 
-
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
     <!-- Baris Pertama: Kampus dan Akademik -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:paddingBottom="8dp"> <!-- Menambahkan jarak bawah pada baris pertama -->
+        android:paddingBottom="8dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -27,13 +27,12 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="8dp"> <!-- Menambahkan padding pada item kampus -->
+            android:padding="8dp">
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/kampus"
-                android:contentDescription="Gambar Jajargenjang" />
+                android:src="@drawable/kampus"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,13 +49,12 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="8dp"> <!-- Menambahkan padding pada item akademik -->
+            android:padding="8dp">
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/akademik"
-                android:contentDescription="Gambar Persegi" />
+                android:src="@drawable/akademik"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -68,9 +66,10 @@
         </LinearLayout>
     </LinearLayout>
 
+    <!-- Mengurangi jarak vertikal di antara bagian -->
     <View
         android:layout_width="match_parent"
-        android:layout_height="130dp" />
+        android:layout_height="120dp" />
 
     <!-- Baris Kedua: Perpustakaan dan Kantin -->
     <LinearLayout
@@ -78,7 +77,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:paddingBottom="8dp"> <!-- Menambahkan jarak bawah pada baris kedua -->
+        android:paddingBottom="8dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -86,13 +85,12 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="8dp"> <!-- Menambahkan padding pada item perpustakaan -->
+            android:padding="8dp">
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/perpustakaan"
-                android:contentDescription="Gambar Segitiga" />
+                android:src="@drawable/perpustakaan"" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -109,13 +107,12 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="8dp"> <!-- Menambahkan padding pada item kantin -->
+            android:padding="8dp">
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/kantin"
-                android:contentDescription="Gambar Lingkaran" />
+                android:src="@drawable/kantin"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -125,5 +122,56 @@
                 android:gravity="center"
                 android:layout_marginTop="10dp" />
         </LinearLayout>
+    </LinearLayout>
+
+    <!-- Memberikan berat layout agar tombol berada di paling bawah -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </LinearLayout>
+
+    <!-- Baris ImageButton di bagian bawah layar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <!-- Tombol gambar untuk Instagram -->
+        <ImageButton
+            android:onClick="showIG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ig"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Instagram"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Tombol gambar untuk Facebook -->
+        <ImageButton
+            android:onClick="showFB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Facebook"
+            android:layout_marginStart="16dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Tombol gambar untuk Twitter -->
+        <ImageButton
+            android:onClick="showTWT"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/twitter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Twitter"
+            android:layout_marginStart="16dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
     </LinearLayout>
 </LinearLayout>
