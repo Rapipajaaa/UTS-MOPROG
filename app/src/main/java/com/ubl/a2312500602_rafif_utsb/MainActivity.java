@@ -6,6 +6,9 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
+import android.view.View;
+import android.content.Intent;
+import android.net.Uri;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,5 +19,29 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+    }
+
+    // Metode untuk membuka Instagram
+    public void showIG(View view) {
+        String url = "https://www.instagram.com/kampusbudiluhur"; // Ganti dengan URL Instagram Anda
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        startActivity(intent);
+    }
+
+    // Metode untuk membuka Facebook
+    public void showFB(View view) {
+        String url = "https://www.facebook.com/Rama"; // Ganti dengan URL Facebook Anda
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        startActivity(intent);
+    }
+
+    // Metode untuk membuka Twitter
+    public void showTWT(View view) {
+        String url = "https://www.twitter.com/rapipajaa"; // Ganti dengan URL Twitter Anda
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        startActivity(intent);
     }
 }
