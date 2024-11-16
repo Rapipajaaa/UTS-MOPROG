@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     public ViewPagerAdapter(@NonNull FragmentManager fm) {
-        super(fm);
+        super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
     }
 
     @NonNull
@@ -16,13 +16,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new Akademik1();
+                return new Akademik1(); // Tab 1: Informasi
             case 1:
-                return new Akademik2();
+                return new Akademik2(); // Tab 2: Alert Box
             case 2:
-                return new Akademik3();
+                return new Akademik3(); // Tab 3
             case 3:
-                return new Akademik4();
+                return new Akademik4(); // Tab 4
             default:
                 return new Akademik1();
         }

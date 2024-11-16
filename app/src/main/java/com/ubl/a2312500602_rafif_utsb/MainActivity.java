@@ -12,12 +12,14 @@ import android.net.Uri;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    private boolean isAlertShownForTab2 = false; // Untuk melacak apakah dialog sudah ditampilkan di Tab 2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
 
     }
 
@@ -48,4 +50,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AkademikActivity.class);
         startActivity(intent);
     }
+
+
 }

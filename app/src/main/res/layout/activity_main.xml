@@ -12,7 +12,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="120dp" />
+        android:layout_height="190dp" />
     <!-- Baris Pertama: Kampus dan Akademik -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -140,7 +140,7 @@
         android:gravity="center"
         android:paddingBottom="20dp">
 
-        <!-- Tombol gambar untuk Instagram -->
+        <!-- Tombol Instagram -->
         <ImageButton
             android:onClick="showIG"
             android:layout_width="50dp"
@@ -151,7 +151,7 @@
             android:padding="4dp"
             android:scaleType="fitCenter" />
 
-        <!-- Tombol gambar untuk Facebook -->
+        <!-- Tombol Facebook -->
         <ImageButton
             android:onClick="showFB"
             android:layout_width="50dp"
@@ -163,7 +163,7 @@
             android:padding="4dp"
             android:scaleType="fitCenter" />
 
-        <!-- Tombol gambar untuk Twitter -->
+        <!-- Tombol Twitter -->
         <ImageButton
             android:onClick="showTWT"
             android:layout_width="50dp"
@@ -175,4 +175,5 @@
             android:padding="4dp"
             android:scaleType="fitCenter" />
     </LinearLayout>
+
 </LinearLayout>

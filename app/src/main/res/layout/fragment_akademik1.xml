@@ -1,53 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragmentAkademikLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
+    <!-- Gambar di bagian atas -->
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/aas"
-        app:layout_constraintBottom_toTopOf="@+id/nameText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Gambar profil"/>
 
+    <!-- TextView untuk NIM -->
     <TextView
         android:id="@+id/nimText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NIM : 2312500602"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
 
+    <!-- TextView untuk Program Studi -->
     <TextView
         android:id="@+id/studyProgramText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Program Studi : Sistem Informasi"
-        app:layout_constraintTop_toBottomOf="@id/nimText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
 
+    <!-- TextView untuk Nama -->
     <TextView
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama : Rafif Ali Rachman"
-        app:layout_constraintTop_toBottomOf="@id/studyProgramText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Ruang kosong untuk mendorong ImageButton ke bawah -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Baris ImageButton di bagian bawah layar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <!-- Tombol Instagram -->
+        <ImageButton
+            android:onClick="showIG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ig"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Instagram"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Tombol Facebook -->
+        <ImageButton
+            android:onClick="showFB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Facebook"
+            android:layout_marginStart="16dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Tombol Twitter -->
+        <ImageButton
+            android:onClick="showTWT"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/twitter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Twitter"
+            android:layout_marginStart="16dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</LinearLayout>
