@@ -16,15 +16,15 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new FirstFragment();
+                return new Akademik1();
             case 1:
-                return new SecondFragment();
+                return new Akademik2();
             case 2:
-                return new ThirdFragment();
+                return new Akademik3();
             case 3:
-                return new FourthFragment();
+                return new Akademik4();
             default:
-                return new FirstFragment();
+                return new Akademik1();
         }
     }
 

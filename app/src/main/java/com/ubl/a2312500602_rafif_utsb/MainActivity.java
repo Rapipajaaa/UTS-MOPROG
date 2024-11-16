@@ -44,4 +44,8 @@ public class MainActivity extends AppCompatActivity {
         intent.setData(Uri.parse(url));
         startActivity(intent);
     }
+    public void showAkademik(View view) {
+        Intent intent = new Intent(this, AkademikActivity.class);
+        startActivity(intent);
+    }
 }
