@@ -15,135 +15,93 @@
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mobile Programming" />
+            android:text="Implementasi Sistem Rekomendasi Produk Menggunakan Algoritma Collaborative Filtering pada E-commerce" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SKB" />
+            android:text="Pengembangan Aplikasi Mobile untuk Pemesanan Makanan dengan Fitur Geolokasi" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SPK" />
+            android:text="Analisis Sentimen terhadap Ulasan Produk E-commerce Menggunakan Metode Naïve Bayes" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bahasa Indonesia" />
+            android:text="Penerapan Algoritma K-Means untuk Segmentasi Pelanggan pada Toko Retail" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bahasa Inggris" />
+            android:text="Pengembangan Sistem Informasi Manajemen Toko Berbasis Web untuk UKM" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PBO" />
+            android:text="Perancangan dan Implementasi Sistem Informasi Akademik Berbasis Web di Perguruan TinggiO" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kalkulus" />
+            android:text="Pengembangan Sistem Pendukung Keputusan Pemilihan Karyawan Terbaik Menggunakan Metode AHP" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ALGO 1" />
+            android:text="Sistem Informasi Keuangan Sekolah Berbasis Web dengan Metode Waterfall" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ALGO 2" />
+            android:text="Implementasi Sistem Inventory Barang Menggunakan Metode FIFO pada Toko Elektronik" />
 
         <Button
             android:id="@+id/button10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PBPSI" />
+            android:text="Perancangan Sistem Manajemen Absensi Karyawan Berbasis Mobile dengan Teknologi QR Code" />
 
         <Button
             android:id="@+id/button11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Penambangan Data" />
+            android:text="Analisis Kinerja Jaringan Komputer Menggunakan Protokol IPv6 pada Topologi Jaringan Hybrid" />
 
         <Button
             android:id="@+id/button12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kecerdasan Tiruan" />
+            android:text="Penerapan Firewall untuk Meningkatkan Keamanan Jaringan di Kantor Pemerintah" />
 
         <Button
             android:id="@+id/button13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pemrograman Kecerdasan Tiruan" />
+            android:text="Penggunaan Teknik Enkripsi AES pada Aplikasi Chatting Berbasis Android" />
 
         <Button
             android:id="@+id/button14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Matematika Bisnis" />
+            android:text="Implementasi Virtual Private Network (VPN) untuk Mengamankan Akses Data di Perusahaan" />
 
         <Button
             android:id="@+id/button15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Logika Matematika" />
+            android:text="Evaluasi Kinerja Load Balancer untuk Meningkatkan Kinerja Server Web" />
 
-        <!-- Baris ImageButton di bagian bawah layar -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:paddingBottom="20dp">
 
-            <!-- Tombol Instagram -->
-            <ImageButton
-                android:onClick="showIG"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ig"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Instagram"
-                android:padding="4dp"
-                android:scaleType="fitCenter" />
-
-            <!-- Tombol Facebook -->
-            <ImageButton
-                android:onClick="showFB"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/facebook"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Facebook"
-                android:layout_marginStart="16dp"
-                android:padding="4dp"
-                android:scaleType="fitCenter" />
-
-            <!-- Tombol Twitter -->
-            <ImageButton
-                android:onClick="showTWT"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/twitter"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Twitter"
-                android:layout_marginStart="16dp"
-                android:padding="4dp"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
 
     </LinearLayout>
 

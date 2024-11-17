@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/H"
     android:orientation="vertical"
     android:gravity="center"
     tools:context="com.ubl.a2312500602_rafif_utsb.MainActivity">
@@ -91,6 +91,7 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:onClick="showPerpus"
                 android:src="@drawable/perpustakaan" />
 
             <TextView

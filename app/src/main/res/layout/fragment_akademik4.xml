@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/H"
     android:orientation="vertical"
     android:gravity="center"
     tools:context="com.ubl.a2312500602_rafif_utsb.MainActivity">
@@ -15,10 +15,57 @@
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Maaf Belum Bisa"
+        android:text="Maaf Belum Bisa Bu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="356dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="600dp" />
+
+    <!-- Baris ImageButton di bagian bawah layar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="8dp">
+
+        <!-- Tombol Instagram -->
+        <ImageButton
+            android:onClick="showIG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ig"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Instagram"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Tombol Facebook -->
+        <ImageButton
+            android:onClick="showFB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Facebook"
+            android:layout_marginStart="16dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Tombol Twitter -->
+        <ImageButton
+            android:onClick="showTWT"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/twitter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Twitter"
+            android:layout_marginStart="16dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
 
 </LinearLayout>

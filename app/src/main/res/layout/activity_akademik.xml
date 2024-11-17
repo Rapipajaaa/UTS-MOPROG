@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/aka1"
-    android:background="@color/white"
+    android:background="@color/H"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AkademikActivity">
@@ -11,16 +11,19 @@
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
+        android:background="@color/H"
         android:layout_height="match_parent" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
+        android:background="@color/H"
         android:layout_height="wrap_content"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
+        android:background="@color/H"
         android:layout_height="match_parent"
         android:layout_below="@id/tab_layout"/>
 

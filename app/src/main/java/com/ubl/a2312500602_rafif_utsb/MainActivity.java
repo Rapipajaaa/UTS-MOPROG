@@ -12,7 +12,6 @@ import android.net.Uri;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    private boolean isAlertShownForTab2 = false; // Untuk melacak apakah dialog sudah ditampilkan di Tab 2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
     // Metode untuk membuka Instagram
     public void showIG(View view) {
         String url = "https://www.instagram.com/kampusbudiluhur"; // Ganti dengan URL Instagram Anda
@@ -30,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         intent.setData(Uri.parse(url));
         startActivity(intent);
     }
+
 
     // Metode untuk membuka Facebook
     public void showFB(View view) {
@@ -48,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void showAkademik(View view) {
         Intent intent = new Intent(this, AkademikActivity.class);
+        startActivity(intent);
+    }
+
+    public void showPerpus(View view) {
+        Intent intent = new Intent(this, PerpusActivity.class);
         startActivity(intent);
     }
 
