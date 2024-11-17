@@ -16,13 +16,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new Akademik1(); // Tab 1: Informasi
+                return new Akademik1();
             case 1:
-                return new Akademik2(); // Tab 2: Alert Box
+                return new Akademik2();
             case 2:
-                return new Akademik3(); // Tab 3
+                return new Akademik3();
             case 3:
-                return new Akademik4(); // Tab 4
+                return new Akademik4();
             default:
                 return new Akademik1();
         }
@@ -37,13 +37,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Tab 1";
+                return "Profil";
             case 1:
-                return "Tab 2";
+                return "Program Sarjana";
             case 2:
-                return "Tab 3";
+                return "Matakuliah";
             case 3:
-                return "Tab 4";
+                return "Lokasi";
             default:
                 return null;
         }

@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // Metode untuk membuka Instagram
     public void showIG(View view) {
-        String url = "https://www.instagram.com/kampusbudiluhur"; // Ganti dengan URL Instagram Anda
+        String url = "https://www.instagram.com/kampusbudiluhur";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Metode untuk membuka Facebook
     public void showFB(View view) {
-        String url = "https://www.facebook.com/Rama"; // Ganti dengan URL Facebook Anda
+        String url = "https://www.facebook.com/budiluhur.ac.id";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Metode untuk membuka Twitter
     public void showTWT(View view) {
-        String url = "https://www.twitter.com/rapipajaa"; // Ganti dengan URL Twitter Anda
+        String url = "https://www.twitter.com/kampusbudiluhur";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
@@ -63,11 +63,9 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("Konfirmasi Keluar")
                 .setMessage("Apakah Anda yakin ingin keluar dari aplikasi?")
                 .setPositiveButton("Ya", (dialog, which) -> {
-                    // Keluar dari aplikasi jika pengguna memilih "Ya"
                     super.onBackPressed();
                 })
                 .setNegativeButton("Tidak", (dialog, which) -> {
-                    // Tutup dialog jika pengguna memilih "Tidak"
                     dialog.dismiss();
                 })
                 .show();

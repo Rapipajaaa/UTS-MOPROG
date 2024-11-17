@@ -30,15 +30,15 @@ public class Akademik3 extends Fragment {
         button1.setOnClickListener(v -> showAlert(Html.fromHtml("Absensi: 80 %<br>UTS: 70<br>UAS: 90")));
 
         Button button2 = view.findViewById(R.id.button2);
-        button2.setOnClickListener(v -> showAlert(Html.fromHtml("Absensi: 80 %<br>UTS: 70<br>UAS: 90")));
+        button2.setOnClickListener(v -> showAlert(Html.fromHtml("Absensi: 80 %<br>UTS: 90<br>UAS: 90")));
 
         // Tambahkan listener untuk button lainnya
         Button button3 = view.findViewById(R.id.button3);
-        button3.setOnClickListener(v -> showAlert(Html.fromHtml("Absensi: 80 %<br>UTS: 70<br>UAS: 90")));
+        button3.setOnClickListener(v -> showAlert(Html.fromHtml("Absensi: 80 %<br>UTS: 79<br>UAS: 90")));
 
         // Tambahkan listener untuk button lainnya
         Button button4= view.findViewById(R.id.button4);
-        button4.setOnClickListener(v -> showAlert(Html.fromHtml("Absensi: 80 %<br>UTS: 70<br>UAS: 90")));
+        button4.setOnClickListener(v -> showAlert(Html.fromHtml("Absensi: 80 %<br>UTS: 71<br>UAS: 90")));
 
         // Tambahkan listener untuk button lainnya
         Button button5 = view.findViewById(R.id.button5);

@@ -69,7 +69,7 @@ public class AkademikActivity extends AppCompatActivity {
     }
 
     public void showIG(View view) {
-        String url = "https://www.instagram.com/kampusbudiluhur";
+        String url = "https://www.instagram.com/rapipajaaa";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
@@ -78,7 +78,7 @@ public class AkademikActivity extends AppCompatActivity {
 
     // Metode untuk membuka Facebook
     public void showFB(View view) {
-        String url = "https://www.facebook.com/Rama";
+        String url = "https://www.facebook.com/Rapipajaaa";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
