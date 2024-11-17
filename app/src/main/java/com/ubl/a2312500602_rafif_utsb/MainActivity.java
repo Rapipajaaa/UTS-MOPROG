@@ -9,6 +9,8 @@ import androidx.core.view.ViewCompat;
 import android.view.View;
 import android.content.Intent;
 import android.net.Uri;
+import androidx.appcompat.app.AlertDialog;
+
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,6 +56,21 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PerpusActivity.class);
         startActivity(intent);
     }
-
+    @Override
+    public void onBackPressed() {
+        // Buat AlertDialog untuk konfirmasi keluar
+        new AlertDialog.Builder(this)
+                .setTitle("Konfirmasi Keluar")
+                .setMessage("Apakah Anda yakin ingin keluar dari aplikasi?")
+                .setPositiveButton("Ya", (dialog, which) -> {
+                    // Keluar dari aplikasi jika pengguna memilih "Ya"
+                    super.onBackPressed();
+                })
+                .setNegativeButton("Tidak", (dialog, which) -> {
+                    // Tutup dialog jika pengguna memilih "Tidak"
+                    dialog.dismiss();
+                })
+                .show();
+    }
 
 }

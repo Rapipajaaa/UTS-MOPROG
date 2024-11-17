@@ -25,11 +25,11 @@ public class PerpusActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void showDosen(View view) {
-        Intent intent = new Intent(this, Mahasiswa.class);
+        Intent intent = new Intent(this, Dosen.class);
         startActivity(intent);
     }
     public void showStaff(View view) {
-        Intent intent = new Intent(this, Mahasiswa.class);
+        Intent intent = new Intent(this, Staff.class);
         startActivity(intent);
     }
 }
