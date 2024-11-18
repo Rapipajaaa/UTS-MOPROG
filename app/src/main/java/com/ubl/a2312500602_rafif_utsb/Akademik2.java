@@ -14,7 +14,6 @@ public class Akademik2 extends Fragment {
 
 
     public Akademik2() {
-        // Required empty public constructor
     }
 
 }

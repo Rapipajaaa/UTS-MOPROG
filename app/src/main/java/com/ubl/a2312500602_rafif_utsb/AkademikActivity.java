@@ -38,7 +38,7 @@ public class AkademikActivity extends AppCompatActivity {
             tabLayout.getTabAt(3).setIcon(R.drawable.maps2);
         }
 
-        // Tambahkan Listener untuk mendeteksi perubahan tab
+
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -76,7 +76,7 @@ public class AkademikActivity extends AppCompatActivity {
     }
 
 
-    // Metode untuk membuka Facebook
+
     public void showFB(View view) {
         String url = "https://www.facebook.com/Rapipajaaa";
         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -84,7 +84,7 @@ public class AkademikActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // Metode untuk membuka Twitter
+
     public void showTWT(View view) {
         String url = "https://www.twitter.com/rapipajaa";
         Intent intent = new Intent(Intent.ACTION_VIEW);

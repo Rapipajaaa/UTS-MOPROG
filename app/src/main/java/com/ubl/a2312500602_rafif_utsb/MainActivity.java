@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    // Metode untuk membuka Instagram
+
     public void showIG(View view) {
         String url = "https://www.instagram.com/kampusbudiluhur";
         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // Metode untuk membuka Facebook
+
     public void showFB(View view) {
         String url = "https://www.facebook.com/budiluhur.ac.id";
         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // Metode untuk membuka Twitter
+
     public void showTWT(View view) {
         String url = "https://www.twitter.com/kampusbudiluhur";
         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        // Buat AlertDialog untuk konfirmasi keluar
+
         new AlertDialog.Builder(this)
                 .setTitle("Konfirmasi Keluar")
                 .setMessage("Apakah Anda yakin ingin keluar dari aplikasi?")

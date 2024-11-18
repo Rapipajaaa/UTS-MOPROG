@@ -13,7 +13,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="190dp" />
-    <!-- Baris Pertama: Kampus dan Akademik -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,12 +67,12 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Mengurangi jarak vertikal di antara bagian -->
+
     <View
         android:layout_width="match_parent"
         android:layout_height="120dp" />
 
-    <!-- Baris Kedua: Perpustakaan dan Kantin -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -126,14 +126,14 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Memberikan berat layout agar tombol berada di paling bawah -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
     </LinearLayout>
 
-    <!-- Baris ImageButton di bagian bawah layar -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
         android:gravity="center"
         android:paddingBottom="20dp">
 
-        <!-- Tombol Instagram -->
+
         <ImageButton
             android:onClick="showIG"
             android:layout_width="50dp"
@@ -152,7 +152,7 @@
             android:padding="4dp"
             android:scaleType="fitCenter" />
 
-        <!-- Tombol Facebook -->
+
         <ImageButton
             android:onClick="showFB"
             android:layout_width="50dp"
@@ -164,7 +164,7 @@
             android:padding="4dp"
             android:scaleType="fitCenter" />
 
-        <!-- Tombol Twitter -->
+
         <ImageButton
             android:onClick="showTWT"
             android:layout_width="50dp"

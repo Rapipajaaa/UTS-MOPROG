@@ -10,9 +10,9 @@ public class Dosen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dosen);
+        setContentView(R.layout.activity_z);
 
-        // Inisialisasi Button dan set OnClickListener untuk menampilkan AlertDialog
+
         Button button1 = findViewById(R.id.button1);
         button1.setOnClickListener(v -> showAlert("oleh Stuart Russell dan Peter Norvig - Buku ini membahas konsep dasar kecerdasan buatan dan penerapannya."));
 
@@ -59,7 +59,6 @@ public class Dosen extends AppCompatActivity {
         button15.setOnClickListener(v -> showAlert(" Jurnal yang membahas penelitian terbaru di bidang computer vision."));
     }
 
-    // Metode untuk menampilkan AlertDialog
     private void showAlert(String message) {
         new AlertDialog.Builder(this)
                 .setTitle("Perpustakaan Khusus Dosen")
