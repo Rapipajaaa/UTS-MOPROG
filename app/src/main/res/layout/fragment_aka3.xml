@@ -10,7 +10,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Tambahkan 15 Button dengan teks berbeda -->
+
         <Button
             android:id="@+id/button1"
             android:layout_width="match_parent"
