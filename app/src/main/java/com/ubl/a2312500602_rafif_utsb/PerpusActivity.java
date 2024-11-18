@@ -13,7 +13,7 @@ public class PerpusActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_x);
+        setContentView(R.layout.activity_prps);
 
     }
     public void showMhs(View view) {

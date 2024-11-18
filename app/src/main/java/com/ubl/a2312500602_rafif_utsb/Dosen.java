@@ -10,7 +10,7 @@ public class Dosen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_z);
+        setContentView(R.layout.activity_dsn);
 
 
         Button button1 = findViewById(R.id.button1);

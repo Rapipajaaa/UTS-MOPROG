@@ -13,7 +13,7 @@ public class Mahasiswa extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_y);
+        setContentView(R.layout.activity_mhs);
 
         Button button1 = findViewById(R.id.button1);
         button1.setOnClickListener(v -> showAlert("Dibuat oleh Andi Saputra"));
